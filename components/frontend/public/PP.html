@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo2.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COVID-19</title>
+
+<style>
+
+
+/*Stilizarea background-ului  */
+body,html{
+  width:100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding:0;
+  background-color: #52343e;
+  background-image: url(PP.png);
+}
+
+/*Stilizarea animatiei*/
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:0;
+  overflow:hidden;
+  top: 80px;;
+  left:0;
+}
+.bubble{
+  position: absolute;
+  bottom:-100px;
+  width:40px;
+  height: 40px;
+  background:#bfbab2;
+  border-radius:50%;
+  opacity:0.5;
+  animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width:40px;
+  height:40px;
+  left:10%;
+  animation-duration:8s;
+}
+.bubble:nth-child(2){
+  width:20px;
+  height:20px;
+  left:20%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(3){
+  width:50px;
+  height:50px;
+  left:35%;
+  animation-duration:7s;
+  animation-delay:2s;
+}
+.bubble:nth-child(4){
+  width:80px;
+  height:80px;
+  left:50%;
+  animation-duration:11s;
+  animation-delay:0s;
+}
+.bubble:nth-child(5){
+  width:35px;
+  height:35px;
+  left:55%;
+  animation-duration:6s;
+  animation-delay:1s;
+}
+.bubble:nth-child(6){
+  width:45px;
+  height:45px;
+  left:65%;
+  animation-duration:8s;
+  animation-delay:3s;
+}
+.bubble:nth-child(7){
+  width:90px;
+  height:90px;
+  left:70%;
+  animation-duration:12s;
+  animation-delay:2s;
+}
+.bubble:nth-child(8){
+  width:25px;
+  height:25px;
+  left:80%;
+  animation-duration:6s;
+  animation-delay:2s;
+}
+.bubble:nth-child(9){
+  width:15px;
+  height:15px;
+  left:70%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(10){
+  width:90px;
+  height:90px;
+  left:25%;
+  animation-duration:10s;
+  animation-delay:4s;
+}
+@keyframes rise{
+  0%{
+    bottom:-100px;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:1080px;
+    transform:translateX(-200px);
+  }
+}
+
+/*Stilizarea meniului */
+  .topnav {
+    background-color: #51343d;
+    background-image: linear-gradient(to right, #8a5656, #693333); 
+    overflow: hidden;
+
+    
+  }
+  
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 22px;
+    text-decoration: none;
+    font-size: 25px;
+    
+    
+  }
+  
+  /* Schimbarea culorii la selectare */
+   .topnav a:hover {
+    background-color: #da9a99;
+    color: rgb(51, 48, 48);
+    
+  } 
+  
+  
+   .topnav a.active {
+    background-color: #815050;
+    color: white;
+  }   
+
+
+  /* Stilizarea butoanelor de acces*/
+  .button1 {
+  position: relative;
+  background-color: #51343d;
+    background-image: linear-gradient(to right, #8a5656, #693333);
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 900px;
+  border-radius: 20px;
+  margin-top: 55px ;
+  margin-bottom: 180px;
+}
+
+.button1:after {
+  content: "";
+  background: #bfbab2;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button1:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}  
+
+.button2 {
+  position: relative;
+  background-color: #51343d;
+    background-image: linear-gradient(to right, #8a5656, #693333);
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 900px;
+  
+  
+  border-radius: 20px;
+}
+
+.button2:after {
+  content: "";
+  background-image: linear-gradient(to right, #915c5c, #bfbab2);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button2:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}  
+
+</style>
+
+</head>
+
+<body>
+
+
+
+    <div class="topnav">
+        <a class="active" href="PP.html">Pagina principala</a>
+        <a href="Harta.js">Harta</a>
+        <a href="STS.html">Satistici</a>
+      </div>
+
+ 
+    <section class="sticky">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+          
+        </div>
+      </section> 
+
+      <a href="https://gov.ro/ro" target="_blank"><button class="button1">Guvernul Romaniei </button>
+
+      <a href="http://dsp.ro/" target="_blank"><button class="button1">Directia de Sanatate Publica</button>
+
+    
+
+
+</body>
+</html> 

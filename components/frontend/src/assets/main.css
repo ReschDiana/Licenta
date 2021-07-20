@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;700;900&display=swap");
+body {
+    font-family: "Lato", sans-serif;
+ 
+}
+
+
+
+ /* Stilizarea meniului */
+.topnav {
+    background-color: rgba(82, 52, 62, 0.842);
+    background-image: linear-gradient(to right, #795360, #a46464);
+    overflow: hidden;
+
+}
+  
+ 
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+ /* Schimbarea culori la selectarea cu mouse-ul*/
+  .topnav a:hover {
+    background-color: #bfb4b2;
+    color: rgb(51, 48, 48);
+  }
+  
+ 
+  .topnav a.active {
+    background-color: #795360d0;
+    color: white;
+  }
+
+
+  /* stilizarea mesajului de incarcare*/
+.app-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+}
+
+
+/* stilizarea diagramei*/
+.map-main {
+    background-color: white;
+    vertical-align: top;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* stilizarea infomatiilor pe judet */
+.stats-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    margin-top: 1rem;
+    font-size: xx-large;
+
+}
+
+.stats-overall,
+.stats-county {
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(240, 240, 240);
+    margin: 0 0.25rem;
+    width: calc(100% - 0.5rem);
+    margin-top: 1rem;
+    font-size: large;
+
+}
+/* stilizarea informatiilor pe tara*/
+.stats-row,
+.stats-header-row {
+    font-weight: 400;
+    padding: 0.25rem 1rem;
+    width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start !important;
+    text-align: left !important;
+    background-color: rgb(240, 240, 240);
+}
+
+.stats-header-row {
+    font-weight: 700;
+    color: white;
+    background-color: #52343e;
+
+    background-image: linear-gradient(to right, #795360, #a46464);
+}
+
+.stats-row-name {
+    width: 40%;
+}
+
+.stats-row-value {
+    width: 38%;
+    text-align: right;
+    margin-right: 2%;
+    
+}
+.stats-row-percentage {
+    width: 18%;
+    margin-left: 2%;
+    text-align: left;
+    
+}
+
+.date-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: -650px;
+    
+}
+
+.popover {
+    width: 400px !important;
+    max-width: 400px !important;
+    height: auto;
+    color: black;
+}
+
+/* centrarea si marimea diagramei*/
+.app-chart {
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+/* stilizarea legendei pentru diagrama*/
+.legend {
+    margin-left: 2rem;
+    width: calc(200px + 1rem);
+}
+
+.legend-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.legend-name {
+    width: 100px;
+    text-align: left;
+}
+
+.legend-value {
+    width: 100px;
+    text-align: left;
+}
+
+
+
